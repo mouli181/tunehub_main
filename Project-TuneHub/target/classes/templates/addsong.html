@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Song</title>
+<link rel=icon type=text/jpg href="/images/logo.jpg">
+<link rel=stylesheet type=text/css href="/addsong.css">
+</head>
+<body>
+	<ul>
+		<li><img src="/images/logo.jpg" alt="logo" width="50px"
+			height="46px" /></li>
+		<li><a href="index">Tunehub</a></li>
+
+
+		<li style="float: right"><a class="Sign in" href="logout">Logout</a>
+		</li>
+		<li style="float: right"><button id="forwardButton">&#9654;</button></li>
+		<!-- Right arrow Unicode character -->
+		<li style="float: right"><button id="backButton">&#9664;</button></li>
+		<!-- Left arrow Unicode character -->
+	</ul>
+	<div>
+		<h2>Add New Song</h2>
+		<form action="addsong" method="post">
+			<label for="name">Name:</label><br> <input type="text" id="name"
+				name="name" placeholder="enter the song name"><br> <br>
+			<label for="artist">Artist:</label><br> <input type="text"
+				id="artist" name="artist" placeholder="enter the artist name"><br>
+			<br> <label for="genre">Genre:</label><br> <input
+				type="text" id="genre" name="genre"
+				placeholder="enter the genre type"><br> <br> <label
+				for="link">Link:</label><br> <input type="text" id="link"
+				name="link" placeholder="enter the link" required><br>
+			<br> 
+			<label for="image">Image:</label><br> 
+			<input type="text" id="imageUrl" name="image" placeholder="enter the image url"><br>
+			<br> <input type="submit" value="Add Song">
+		</form>
+	</div>
+	<script>
+	document.getElementById('forwardButton').addEventListener('click', function() {
+  window.history.forward();
+});
+    document.getElementById('backButton').addEventListener('click', function() {
+  window.history.back();
+});
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* CSS for the footer */
+
+footer {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color of the footer */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Align content to the center */
+    
+}
+
+.footer-content {
+    max-width: 1000px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+	
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margin between paragraphs */
+}
